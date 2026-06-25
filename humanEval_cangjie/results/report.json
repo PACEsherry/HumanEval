@@ -1,0 +1,4776 @@
+{
+  "report": {
+    "agent_name": "opencode/GLM-5.1/optimize-636",
+    "benchmark_name": "Unnamed Benchmark",
+    "language": "cangjie",
+    "k_values": [
+      1
+    ],
+    "total_tasks": 164,
+    "total_samples": 164,
+    "n_per_task": 1,
+    "timestamp": "2026-06-24T15:33:46+08:00"
+  },
+  "metrics": {
+    "compilation_success_rate": {
+      "value": 0.7195121951219512,
+      "unit": "ratio",
+      "description": "平均编译成功率（所有 Task 平均）"
+    },
+    "avg_test_pass_ratio": {
+      "value": 0.6524390243902439,
+      "unit": "ratio",
+      "description": "平均测试通过率（所有 Task 平均，编译失败样本记为 0）"
+    },
+    "pass_at_k": {
+      "pass@1": {
+        "value": 0.6524390243902439,
+        "unit": "ratio"
+      }
+    },
+    "total_time": {
+      "value": 4165.74,
+      "unit": "seconds",
+      "description": "Agent 代码生成总耗时（samples.jsonl 中 time_spent_sec 之和）"
+    },
+    "avg_time_per_task": {
+      "value": 25.400853658536583,
+      "unit": "seconds",
+      "description": "每个 Task 平均生成耗时"
+    },
+    "total_api_cost": {
+      "value": "N/A",
+      "unit": "USD",
+      "description": "总 API 开销"
+    },
+    "avg_api_cost": {
+      "value": "N/A",
+      "unit": "USD",
+      "description": "平均每 Task API 开销"
+    },
+    "total_input_tokens": {
+      "value": 696775.0,
+      "unit": "tokens",
+      "description": "总输入 token 数"
+    },
+    "avg_input_tokens": {
+      "value": 4248.628048780488,
+      "unit": "tokens",
+      "description": "平均每 Task 输入 token 数"
+    },
+    "total_output_tokens": {
+      "value": 213493.0,
+      "unit": "tokens",
+      "description": "总输出 token 数"
+    },
+    "avg_output_tokens": {
+      "value": 1301.7865853658536,
+      "unit": "tokens",
+      "description": "平均每 Task 输出 token 数"
+    }
+  },
+  "composite_score": {
+    "value": 53.6,
+    "unit": "score (0-100)",
+    "evaluation_system": "basic",
+    "description": "综合评分（基础评估体系，等权重），分数越高整体表现越好"
+  },
+  "per_task_results": [
+    {
+      "task_id": "HumanEval/0",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: undeclared identifier 'True'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpe19y5c6q.cj:16:24:\r\n   | \r\n16 |                 return True\r\n   |                        ^ \r\n   | \r\n\r\nerror: undeclared identifier 'False'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpe19y5c6q.cj:20:12:\r\n   | \r\n20 |     return False\r\n   |            ^ \r\n   | \r\n\r\n2 errors generated, 2 errors printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 34.59,
+        "api_cost": null,
+        "input_tokens": 4826.0,
+        "output_tokens": 1847.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/1",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: undeclared identifier 'ArrayList'\r\n ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmp3jvccyul.cj:9:18:\r\n  | \r\n9 |     var result = ArrayList<String>()\r\n  |                  ^ \r\n  | \r\n\r\nerror: undeclared identifier 'ArrayList'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmp3jvccyul.cj:10:19:\r\n   | \r\n10 |     var current = ArrayList<Rune>()\r\n   |                   ^ \r\n   | \r\n\r\n2 errors generated, 2 errors printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 18.05,
+        "api_cost": null,
+        "input_tokens": 4394.0,
+        "output_tokens": 816.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/10",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: body of function 'is_palindrome' is missing\r\n ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpluw85iew.cj:1:41:\r\n  | \r\n1 | func is_palindrome(string: String): Bool\r\n  |                                         ^ missing function body here\r\n  | \r\n\r\n1 error generated, 1 error printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 88.73,
+        "api_cost": null,
+        "input_tokens": 4284.0,
+        "output_tokens": 5061.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/100",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 8.76,
+        "api_cost": null,
+        "input_tokens": 4730.0,
+        "output_tokens": 395.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/101",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: undeclared identifier 'ArrayList'\r\n ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmp19gwhj79.cj:3:18:\r\n  | \r\n3 |     var result = ArrayList<String>()\r\n  |                  ^ \r\n  | \r\n\r\n1 error generated, 1 error printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 32.53,
+        "api_cost": null,
+        "input_tokens": 4304.0,
+        "output_tokens": 1715.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/102",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 10.2,
+        "api_cost": null,
+        "input_tokens": 4202.0,
+        "output_tokens": 529.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/103",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 0,
+          "total": 1,
+          "test_pass_ratio": 0.0,
+          "correct": false,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 61.23,
+        "api_cost": null,
+        "input_tokens": 4477.0,
+        "output_tokens": 3357.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/104",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: undeclared identifier 'ArrayList'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpg97u8kwq.cj:11:18:\r\n   | \r\n11 |     var result = ArrayList<Int64>()\r\n   |                  ^ \r\n   | \r\n\r\nerror: undeclared identifier 'sort'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpg97u8kwq.cj:28:5:\r\n   | \r\n28 |     sort(arr)\r\n   |     ^ \r\n   | \r\n\r\n2 errors generated, 2 errors printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 17.94,
+        "api_cost": null,
+        "input_tokens": 4477.0,
+        "output_tokens": 1032.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/105",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 0,
+          "total": 1,
+          "test_pass_ratio": 0.0,
+          "correct": false,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 100.13,
+        "api_cost": null,
+        "input_tokens": 4306.0,
+        "output_tokens": 5264.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/106",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 12.86,
+        "api_cost": null,
+        "input_tokens": 4838.0,
+        "output_tokens": 659.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/107",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 5.81,
+        "api_cost": null,
+        "input_tokens": 3315.0,
+        "output_tokens": 242.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/108",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 0,
+          "total": 1,
+          "test_pass_ratio": 0.0,
+          "correct": false,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 40.09,
+        "api_cost": null,
+        "input_tokens": 4727.0,
+        "output_tokens": 2107.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/109",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 20.0,
+        "api_cost": null,
+        "input_tokens": 4668.0,
+        "output_tokens": 998.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/11",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 22.97,
+        "api_cost": null,
+        "input_tokens": 3747.0,
+        "output_tokens": 1208.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/110",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 8.95,
+        "api_cost": null,
+        "input_tokens": 4381.0,
+        "output_tokens": 451.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/111",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: type of left operand does not support coalescing operation. coalescing is only valid for 'Option'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpuvrt8uae.cj:24:28:\r\n   | \r\n24 |             let current = (counts[p] ?? 0)\r\n   |                            ^ \r\n   | \r\n\r\n1 error generated, 1 error printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 28.55,
+        "api_cost": null,
+        "input_tokens": 4244.0,
+        "output_tokens": 1684.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/112",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 26.95,
+        "api_cost": null,
+        "input_tokens": 4346.0,
+        "output_tokens": 1546.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/113",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 26.39,
+        "api_cost": null,
+        "input_tokens": 4465.0,
+        "output_tokens": 1405.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/114",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 8.5,
+        "api_cost": null,
+        "input_tokens": 4729.0,
+        "output_tokens": 425.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/115",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 0,
+          "total": 1,
+          "test_pass_ratio": 0.0,
+          "correct": false,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 17.02,
+        "api_cost": null,
+        "input_tokens": 4733.0,
+        "output_tokens": 876.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/116",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 0,
+          "total": 1,
+          "test_pass_ratio": 0.0,
+          "correct": false,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 17.81,
+        "api_cost": null,
+        "input_tokens": 4729.0,
+        "output_tokens": 920.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/117",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: undeclared identifier 'ArrayList'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmp7z4byofr.cj:22:17:\r\n   | \r\n22 |     var words = ArrayList<String>()\r\n   |                 ^ \r\n   | \r\n\r\nerror: undeclared identifier 'ArrayList'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmp7z4byofr.cj:23:24:\r\n   | \r\n23 |     var currentRunes = ArrayList<Rune>()\r\n   |                        ^ \r\n   | \r\n\r\nerror: undeclared identifier 'ArrayList'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmp7z4byofr.cj:39:18:\r\n   | \r\n39 |     var result = ArrayList<String>()\r\n   |                  ^ \r\n   | \r\n\r\n3 errors generated, 3 errors printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 61.82,
+        "api_cost": null,
+        "input_tokens": 4474.0,
+        "output_tokens": 3728.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/118",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 65.42,
+        "api_cost": null,
+        "input_tokens": 5121.0,
+        "output_tokens": 2432.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/119",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 57.1,
+        "api_cost": null,
+        "input_tokens": 4160.0,
+        "output_tokens": 2279.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/12",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 59.51,
+        "api_cost": null,
+        "input_tokens": 4120.0,
+        "output_tokens": 3213.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/120",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: lambda capturing mutable variables needs to be called directly\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmphc77y1e6.cj:25:29:\r\n   | \r\n25 |     return Array<Int64>(kk, {i => copy[i]})\r\n   |                             ^^^^^^^^^^^^^^ \r\n   | \r\nnote: 'copy' is mutable\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmphc77y1e6.cj:25:35:\r\n   | \r\n25 |     return Array<Int64>(kk, {i => copy[i]})\r\n   |                                   ^^^^ \r\n   | \r\n\r\n1 error generated, 1 error printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 23.3,
+        "api_cost": null,
+        "input_tokens": 4733.0,
+        "output_tokens": 1217.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/121",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 5.82,
+        "api_cost": null,
+        "input_tokens": 4810.0,
+        "output_tokens": 243.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/122",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 0,
+          "total": 1,
+          "test_pass_ratio": 0.0,
+          "correct": false,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 2.71,
+        "api_cost": null,
+        "input_tokens": 4732.0,
+        "output_tokens": 58.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/123",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 55.58,
+        "api_cost": null,
+        "input_tokens": 4730.0,
+        "output_tokens": 3108.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/124",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 59.47,
+        "api_cost": null,
+        "input_tokens": 5094.0,
+        "output_tokens": 3331.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/125",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: undeclared identifier 'ArrayList'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpxzp4u0a8.cj:52:21:\r\n   | \r\n52 |         var words = ArrayList<String>()\r\n   |                     ^ \r\n   | \r\n\r\nerror: undeclared identifier 'ArrayList'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpxzp4u0a8.cj:53:23:\r\n   | \r\n53 |         var current = ArrayList<Rune>()\r\n   |                       ^ \r\n   | \r\n\r\nerror: undeclared identifier 'ArrayList'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpxzp4u0a8.cj:69:21:\r\n   | \r\n69 |         var words = ArrayList<String>()\r\n   |                     ^ \r\n   | \r\n\r\nerror: undeclared identifier 'ArrayList'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpxzp4u0a8.cj:70:23:\r\n   | \r\n70 |         var current = ArrayList<Rune>()\r\n   |                       ^ \r\n   | \r\n\r\n4 errors generated, 4 errors printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 72.81,
+        "api_cost": null,
+        "input_tokens": 4477.0,
+        "output_tokens": 4086.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/126",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 15.75,
+        "api_cost": null,
+        "input_tokens": 4965.0,
+        "output_tokens": 780.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/127",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: expected ';' or '<NL>', found literal '.0'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpkb9mumzf.cj:19:23:\r\n   | \r\n19 |     var s1 = interval1.0\r\n   |                       ^^ expected ';' or '<NL>' here\r\n   | \r\n\r\nerror: expected ';' or '<NL>', found literal '.1'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpkb9mumzf.cj:20:23:\r\n   | \r\n20 |     var e1 = interval1.1\r\n   |                       ^^ expected ';' or '<NL>' here\r\n   | \r\n\r\nerror: expected ';' or '<NL>', found literal '.0'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpkb9mumzf.cj:21:23:\r\n   | \r\n21 |     var s2 = interval2.0\r\n   |                       ^^ expected ';' or '<NL>' here\r\n   | \r\n\r\nerror: expected ';' or '<NL>', found literal '.1'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpkb9mumzf.cj:22:23:\r\n   | \r\n22 |     var e2 = interval2.1\r\n   |                       ^^ expected ';' or '<NL>' here\r\n   | \r\n\r\n4 errors generated, 4 errors printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 34.59,
+        "api_cost": null,
+        "input_tokens": 5098.0,
+        "output_tokens": 1854.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/128",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 0,
+          "total": 1,
+          "test_pass_ratio": 0.0,
+          "correct": false,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 24.76,
+        "api_cost": null,
+        "input_tokens": 4255.0,
+        "output_tokens": 1345.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/129",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: mismatched types\r\n ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpft_5oqj1.cj:4:11:\r\n  | \r\n4 |     return\r\n  |           ^ expected 'Struct-Array<Int64>', found 'Unit'\r\n  | \r\n\r\n1 error generated, 1 error printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 0.0,
+        "api_cost": null,
+        "input_tokens": 0.0,
+        "output_tokens": 0.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/13",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 3.97,
+        "api_cost": null,
+        "input_tokens": 3360.0,
+        "output_tokens": 135.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/130",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 52.76,
+        "api_cost": null,
+        "input_tokens": 4609.0,
+        "output_tokens": 3396.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/131",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 15.53,
+        "api_cost": null,
+        "input_tokens": 4176.0,
+        "output_tokens": 754.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/132",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 32.19,
+        "api_cost": null,
+        "input_tokens": 4158.0,
+        "output_tokens": 1687.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/133",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 29.63,
+        "api_cost": null,
+        "input_tokens": 4530.0,
+        "output_tokens": 1707.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/134",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 44.34,
+        "api_cost": null,
+        "input_tokens": 5557.0,
+        "output_tokens": 2437.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/135",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 11.46,
+        "api_cost": null,
+        "input_tokens": 4476.0,
+        "output_tokens": 112.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/136",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 5.39,
+        "api_cost": null,
+        "input_tokens": 4386.0,
+        "output_tokens": 231.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/137",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: undeclared identifier 'parse'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpxxmnmpcy.cj:45:25:\r\n   | \r\n45 |                 Float64.parse(sb.toString())\r\n   |                         ^^^^^ \r\n   | \r\n\r\n1 error generated, 1 error printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 105.79,
+        "api_cost": null,
+        "input_tokens": 4355.0,
+        "output_tokens": 4906.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/138",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 7.8,
+        "api_cost": null,
+        "input_tokens": 3370.0,
+        "output_tokens": 374.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/139",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 6.25,
+        "api_cost": null,
+        "input_tokens": 4202.0,
+        "output_tokens": 225.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/14",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 20.45,
+        "api_cost": null,
+        "input_tokens": 4338.0,
+        "output_tokens": 1066.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/140",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 0,
+          "total": 1,
+          "test_pass_ratio": 0.0,
+          "correct": false,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 21.37,
+        "api_cost": null,
+        "input_tokens": 2884.0,
+        "output_tokens": 1088.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/141",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: trailing closure can only be used on function calls with function or variable names\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpmkisxvi0.cj:31:10:\r\n   | \r\n31 |     if (!((firstByte >= UInt8('A') && firstByte <= UInt8('Z')) || (firstByte >= UInt8('a') && firstByte <= UInt8('z'))) {\r\n   |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ \r\n   | \r\n\r\nerror: unclosed delimiter: '('\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpmkisxvi0.cj:33:6:\r\n   | \r\n31 |     if (!((firstByte >= UInt8('A') && firstByte <= UInt8('Z')) || (firstByte >= UInt8('a') && firstByte <= UInt8('z'))) {\r\n   |        ~ to match this opening '('\r\n32 |         return \"No\"\r\n33 |     }\r\n   |      ^ expected ')' here\r\n   | \r\n\r\n2 errors generated, 2 errors printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 79.67,
+        "api_cost": null,
+        "input_tokens": 2924.0,
+        "output_tokens": 4445.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/142",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 0,
+          "total": 1,
+          "test_pass_ratio": 0.0,
+          "correct": false,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 2.58,
+        "api_cost": null,
+        "input_tokens": 4728.0,
+        "output_tokens": 56.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/143",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: undeclared identifier 'ArrayList'\r\n ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpzmky9d2f.cj:3:18:\r\n  | \r\n3 |     var result = ArrayList<String>()\r\n  |                  ^ \r\n  | \r\n\r\n1 error generated, 1 error printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 57.38,
+        "api_cost": null,
+        "input_tokens": 2885.0,
+        "output_tokens": 3085.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/144",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 25.71,
+        "api_cost": null,
+        "input_tokens": 4989.0,
+        "output_tokens": 1401.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/145",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: lambda capturing mutable variables needs to be called directly\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmp8cblbezf.cj:32:34:\r\n   | \r\n32 |     var result = Array<Int64>(n, {i => nums[indices[i]]})\r\n   |                                  ^^^^^^^^^^^^^^^^^^^^^^^ \r\n   | \r\nnote: 'indices' is mutable\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmp8cblbezf.cj:32:45:\r\n   | \r\n32 |     var result = Array<Int64>(n, {i => nums[indices[i]]})\r\n   |                                             ^^^^^^^ \r\n   | \r\n\r\n1 error generated, 1 error printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 96.9,
+        "api_cost": null,
+        "input_tokens": 4730.0,
+        "output_tokens": 4934.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/146",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 15.87,
+        "api_cost": null,
+        "input_tokens": 4492.0,
+        "output_tokens": 873.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/147",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 83.83,
+        "api_cost": null,
+        "input_tokens": 4136.0,
+        "output_tokens": 4264.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/148",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: undeclared identifier 'ArrayList'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpqmwdmhzh.cj:34:18:\r\n   | \r\n34 |     var result = ArrayList<String>()\r\n   |                  ^ \r\n   | \r\n\r\n1 error generated, 1 error printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 8.65,
+        "api_cost": null,
+        "input_tokens": 4502.0,
+        "output_tokens": 420.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/149",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 38.3,
+        "api_cost": null,
+        "input_tokens": 4367.0,
+        "output_tokens": 1825.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/15",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 36.1,
+        "api_cost": null,
+        "input_tokens": 4079.0,
+        "output_tokens": 1834.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/150",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 5.4,
+        "api_cost": null,
+        "input_tokens": 4197.0,
+        "output_tokens": 178.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/151",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 25.57,
+        "api_cost": null,
+        "input_tokens": 4475.0,
+        "output_tokens": 1201.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/152",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 4.89,
+        "api_cost": null,
+        "input_tokens": 4259.0,
+        "output_tokens": 176.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/153",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: undeclared identifier 'isUpperCase'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpmaog700z.cj:25:19:\r\n   | \r\n25 |             if (r.isUpperCase()) {\r\n   |                   ^^^^^^^^^^^ \r\n   | \r\n\r\nerror: undeclared identifier 'isLowerCase'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpmaog700z.cj:27:26:\r\n   | \r\n27 |             } else if (r.isLowerCase()) {\r\n   |                          ^^^^^^^^^^^ \r\n   | \r\n\r\n2 errors generated, 2 errors printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 23.19,
+        "api_cost": null,
+        "input_tokens": 4352.0,
+        "output_tokens": 1244.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/154",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 85.38,
+        "api_cost": null,
+        "input_tokens": 4860.0,
+        "output_tokens": 5289.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/155",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 10.7,
+        "api_cost": null,
+        "input_tokens": 3364.0,
+        "output_tokens": 566.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/156",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 17.83,
+        "api_cost": null,
+        "input_tokens": 4865.0,
+        "output_tokens": 826.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/157",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: undeclared identifier 'sort'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmp3le3grft.cj:16:5:\r\n   | \r\n16 |     sort(sides)\r\n   |     ^ \r\n   | \r\n\r\n1 error generated, 1 error printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 4.5,
+        "api_cost": null,
+        "input_tokens": 4222.0,
+        "output_tokens": 162.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/158",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 34.5,
+        "api_cost": null,
+        "input_tokens": 4410.0,
+        "output_tokens": 1746.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/159",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 17.5,
+        "api_cost": null,
+        "input_tokens": 4737.0,
+        "output_tokens": 381.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/16",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 22.1,
+        "api_cost": null,
+        "input_tokens": 4795.0,
+        "output_tokens": 1014.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/160",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 0,
+          "total": 1,
+          "test_pass_ratio": 0.0,
+          "correct": false,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 41.17,
+        "api_cost": null,
+        "input_tokens": 4312.0,
+        "output_tokens": 2074.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/161",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 36.44,
+        "api_cost": null,
+        "input_tokens": 4183.0,
+        "output_tokens": 2042.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/162",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: undeclared identifier 'Md5Digest'\r\n ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpqcnfpifk.cj:6:15:\r\n  | \r\n6 |     let md5 = Md5Digest()\r\n  |               ^ \r\n  | \r\n\r\nerror: no matching function declaration for function call 'append'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpqcnfpifk.cj:13:16:\r\n   | \r\n13 |         result.append(hexMap[(val >> 4) & 15])\r\n   |                ^ \r\n   | \r\nnote: found function member of 'Class-StringBuilder'\r\n   ==> (package std.core)string_builder.cj:139:17:\r\nnote: found function member of 'Class-StringBuilder'\r\n   ==> (package std.core)string_builder.cj:155:17:\r\nnote: found function member of 'Class-StringBuilder'\r\n   ==> (package std.core)string_builder.cj:168:17:\r\nnote: found function member of 'Class-StringBuilder'\r\n   ==> (package std.core)string_builder.cj:209:17:\r\nnote: found function member of 'Class-StringBuilder'\r\n   ==> (package std.core)string_builder.cj:217:17:\r\nnote: found function member of 'Class-StringBuilder'\r\n   ==> (package st",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 119.83,
+        "api_cost": null,
+        "input_tokens": 3564.0,
+        "output_tokens": 6291.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/163",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: lambda capturing mutable variables needs to be called directly\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpogv_ys50.cj:27:32:\r\n   | \r\n27 |     return Array<Int64>(count, {i => start + i * 2})\r\n   |                                ^^^^^^^^^^^^^^^^^^^^ \r\n   | \r\nnote: 'start' is mutable\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpogv_ys50.cj:27:38:\r\n   | \r\n27 |     return Array<Int64>(count, {i => start + i * 2})\r\n   |                                      ^^^^^ \r\n   | \r\n\r\n1 error generated, 1 error printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 25.48,
+        "api_cost": null,
+        "input_tokens": 4734.0,
+        "output_tokens": 1449.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/17",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: undeclared identifier 'ArrayList'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpe0srtwa9.cj:10:18:\r\n   | \r\n10 |     var result = ArrayList<Int64>()\r\n   |                  ^ \r\n   | \r\n\r\n1 error generated, 1 error printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 71.52,
+        "api_cost": null,
+        "input_tokens": 4281.0,
+        "output_tokens": 4204.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/18",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: 'subString' is not a member of struct 'String'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpn1r7_7lp.cj:19:20:\r\n   | \r\n19 |         if (string.subString(i, i + substring.size) == substring) {\r\n   |                    ^^^^^^^^^ \r\n   | \r\n\r\n1 error generated, 1 error printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 25.09,
+        "api_cost": null,
+        "input_tokens": 4813.0,
+        "output_tokens": 1260.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/19",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: mismatched types\r\n ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpbg50wju9.cj:9:11:\r\n  | \r\n9 |     return\r\n  |           ^ expected 'Struct-String', found 'Unit'\r\n  | \r\n\r\n1 error generated, 1 error printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 0.0,
+        "api_cost": null,
+        "input_tokens": 0.0,
+        "output_tokens": 0.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/2",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 4.31,
+        "api_cost": null,
+        "input_tokens": 3374.0,
+        "output_tokens": 135.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/20",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 36.12,
+        "api_cost": null,
+        "input_tokens": 4868.0,
+        "output_tokens": 1903.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/21",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: lambda capturing mutable variables needs to be called directly\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmp451w_9wy.cj:18:47:\r\n   | \r\n18 |       let result = Array<Float64>(numbers.size, {i =>\r\n   |  _______________________________________________^\r\n19 | |         (numbers[i] - minVal) / range\r\n20 | |     })\r\n   | |_____^\r\n   | \r\nnote: 'minVal' is mutable\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmp451w_9wy.cj:19:23:\r\n   | \r\n19 |         (numbers[i] - minVal) / range\r\n   |                       ^^^^^^ \r\n   | \r\n\r\n1 error generated, 1 error printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 4.22,
+        "api_cost": null,
+        "input_tokens": 4486.0,
+        "output_tokens": 170.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/22",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: expected '=>' in lambda expression, found 'result'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpra4jzefl.cj:49:17:\r\n   | \r\n49 |                 result[idx] = n\r\n   |                 ^^^^^^ expected '=>' here\r\n   | \r\n\r\n1 error generated, 1 error printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 16.33,
+        "api_cost": null,
+        "input_tokens": 4415.0,
+        "output_tokens": 756.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/23",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 10.5,
+        "api_cost": null,
+        "input_tokens": 4060.0,
+        "output_tokens": 415.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/24",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 6.89,
+        "api_cost": null,
+        "input_tokens": 4152.0,
+        "output_tokens": 299.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/25",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: undeclared identifier 'ArrayList'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmp7zyvu8hx.cj:12:18:\r\n   | \r\n12 |     var result = ArrayList<Int64>()\r\n   |                  ^ \r\n   | \r\n\r\n1 error generated, 1 error printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 4.66,
+        "api_cost": null,
+        "input_tokens": 4829.0,
+        "output_tokens": 200.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/26",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: undeclared identifier 'HashMap'\r\n ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpnsxrbyzo.cj:7:18:\r\n  | \r\n7 |     var counts = HashMap<Int64, Int64>()\r\n  |                  ^ \r\n  | \r\n\r\nerror: undeclared identifier 'ArrayList'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpnsxrbyzo.cj:12:18:\r\n   | \r\n12 |     var result = ArrayList<Int64>()\r\n   |                  ^ \r\n   | \r\n\r\n2 errors generated, 2 errors printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 5.03,
+        "api_cost": null,
+        "input_tokens": 4787.0,
+        "output_tokens": 162.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/27",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: undeclared identifier 'isUpperCase'\r\n ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpdr0lh4ke.cj:8:15:\r\n  | \r\n8 |         if (r.isUpperCase()) {\r\n  |               ^^^^^^^^^^^ \r\n  | \r\n\r\nerror: undeclared identifier 'toLowerCase'\r\n ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpdr0lh4ke.cj:9:37:\r\n  | \r\n9 |             result.append(String([r.toLowerCase()]))\r\n  |                                     ^^^^^^^^^^^ \r\n  | \r\n\r\nerror: undeclared identifier 'isLowerCase'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpdr0lh4ke.cj:10:22:\r\n   | \r\n10 |         } else if (r.isLowerCase()) {\r\n   |                      ^^^^^^^^^^^ \r\n   | \r\n\r\nerror: undeclared identifier 'toUpperCase'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpdr0lh4ke.cj:11:37:\r\n   | \r\n11 |             result.append(String([r.toUpperCase()]))\r\n   |                                     ^^^^^^^^^^^ \r\n   | \r\n\r\n4 errors generated, 4 errors printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 15.96,
+        "api_cost": null,
+        "input_tokens": 4432.0,
+        "output_tokens": 765.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/28",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 10.69,
+        "api_cost": null,
+        "input_tokens": 4322.0,
+        "output_tokens": 457.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/29",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: undeclared identifier 'ArrayList'\r\n ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmphq85i258.cj:8:18:\r\n  | \r\n8 |     var result = ArrayList<String>()\r\n  |                  ^ \r\n  | \r\n\r\n1 error generated, 1 error printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 17.87,
+        "api_cost": null,
+        "input_tokens": 4255.0,
+        "output_tokens": 867.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/3",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 3.48,
+        "api_cost": null,
+        "input_tokens": 4820.0,
+        "output_tokens": 72.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/30",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 11.02,
+        "api_cost": null,
+        "input_tokens": 4826.0,
+        "output_tokens": 561.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/31",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 4.83,
+        "api_cost": null,
+        "input_tokens": 3392.0,
+        "output_tokens": 234.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/32",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: body of function 'poly' is missing\r\n ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpu8llc9eo.cj:1:51:\r\n  | \r\n1 | func poly(xs: Array<Float64>, x: Float64): Float64\r\n  |                                                   ^ missing function body here\r\n  | \r\n\r\n1 error generated, 1 error printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 10.24,
+        "api_cost": null,
+        "input_tokens": 4906.0,
+        "output_tokens": 554.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/33",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 78.69,
+        "api_cost": null,
+        "input_tokens": 4523.0,
+        "output_tokens": 4949.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/34",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: lambda capturing mutable variables needs to be called directly\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpsz4lzmjg.cj:30:44:\r\n   | \r\n30 |     var result = Array<Int64>(uniqueCount, {i => temp[i]})\r\n   |                                            ^^^^^^^^^^^^^^ \r\n   | \r\nnote: 'temp' is mutable\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpsz4lzmjg.cj:30:50:\r\n   | \r\n30 |     var result = Array<Int64>(uniqueCount, {i => temp[i]})\r\n   |                                                  ^^^^ \r\n   | \r\n\r\n1 error generated, 1 error printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 22.28,
+        "api_cost": null,
+        "input_tokens": 4786.0,
+        "output_tokens": 1204.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/35",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 3.34,
+        "api_cost": null,
+        "input_tokens": 4793.0,
+        "output_tokens": 99.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/36",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 24.8,
+        "api_cost": null,
+        "input_tokens": 3371.0,
+        "output_tokens": 1379.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/37",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 21.66,
+        "api_cost": null,
+        "input_tokens": 4496.0,
+        "output_tokens": 1218.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/38",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: body of function 'encode_cyclic' is missing\r\n ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpjyaqxwwu.cj:1:38:\r\n  | \r\n1 | func encode_cyclic(s: String): String\r\n  |                                      ^ missing function body here\r\n  | \r\n\r\nerror: expected declaration, found '{'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpjyaqxwwu.cj:21:1:\r\n   | \r\n21 | {\r\n   | ^ expected declaration here\r\n   | \r\n   # note: only declarations or macro expressions can be used in the top-level\r\n\r\n2 errors generated, 2 errors printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 69.05,
+        "api_cost": null,
+        "input_tokens": 2895.0,
+        "output_tokens": 3820.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/39",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 18.47,
+        "api_cost": null,
+        "input_tokens": 3309.0,
+        "output_tokens": 1046.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/4",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 26.08,
+        "api_cost": null,
+        "input_tokens": 4265.0,
+        "output_tokens": 1283.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/40",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 3.05,
+        "api_cost": null,
+        "input_tokens": 4728.0,
+        "output_tokens": 100.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/41",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 9.96,
+        "api_cost": null,
+        "input_tokens": 3309.0,
+        "output_tokens": 277.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/42",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 3.89,
+        "api_cost": null,
+        "input_tokens": 4821.0,
+        "output_tokens": 92.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/43",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 7.24,
+        "api_cost": null,
+        "input_tokens": 4728.0,
+        "output_tokens": 326.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/44",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 18.43,
+        "api_cost": null,
+        "input_tokens": 4093.0,
+        "output_tokens": 955.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/45",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 3.95,
+        "api_cost": null,
+        "input_tokens": 4154.0,
+        "output_tokens": 138.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/46",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 28.58,
+        "api_cost": null,
+        "input_tokens": 3463.0,
+        "output_tokens": 1748.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/47",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: undeclared identifier 'ArrayList'\r\n ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpjdhvl19a.cj:8:18:\r\n  | \r\n8 |     var sorted = ArrayList<Int64>(l)\r\n  |                  ^ \r\n  | \r\n\r\nerror: undeclared identifier 'sort'\r\n ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpjdhvl19a.cj:9:5:\r\n  | \r\n9 |     sort(sorted)\r\n  |     ^ \r\n  | \r\n\r\n2 errors generated, 2 errors printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 32.69,
+        "api_cost": null,
+        "input_tokens": 4786.0,
+        "output_tokens": 1848.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/48",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 6.65,
+        "api_cost": null,
+        "input_tokens": 4036.0,
+        "output_tokens": 290.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/49",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 13.97,
+        "api_cost": null,
+        "input_tokens": 3398.0,
+        "output_tokens": 732.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/5",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 10.21,
+        "api_cost": null,
+        "input_tokens": 4753.0,
+        "output_tokens": 520.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/50",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: body of function 'encode_shift' is missing\r\n ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpdc1vomcr.cj:1:37:\r\n  | \r\n1 | func encode_shift(s: String): String\r\n  |                                     ^ missing function body here\r\n  | \r\n\r\nerror: expected declaration, found '{'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpdc1vomcr.cj:22:1:\r\n   | \r\n22 | {\r\n   | ^ expected declaration here\r\n   | \r\n   # note: only declarations or macro expressions can be used in the top-level\r\n\r\n2 errors generated, 2 errors printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 35.52,
+        "api_cost": null,
+        "input_tokens": 2893.0,
+        "output_tokens": 2099.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/51",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 11.26,
+        "api_cost": null,
+        "input_tokens": 4357.0,
+        "output_tokens": 571.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/52",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 3.54,
+        "api_cost": null,
+        "input_tokens": 4790.0,
+        "output_tokens": 120.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/53",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 3.48,
+        "api_cost": null,
+        "input_tokens": 4266.0,
+        "output_tokens": 88.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/54",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 41.16,
+        "api_cost": null,
+        "input_tokens": 4041.0,
+        "output_tokens": 2124.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/55",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 14.88,
+        "api_cost": null,
+        "input_tokens": 3344.0,
+        "output_tokens": 800.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/56",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 8.71,
+        "api_cost": null,
+        "input_tokens": 4937.0,
+        "output_tokens": 401.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/57",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 9.55,
+        "api_cost": null,
+        "input_tokens": 4797.0,
+        "output_tokens": 419.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/58",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: undeclared identifier 'HashSet'\r\n ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpl6np1wha.cj:8:16:\r\n  | \r\n8 |     var set1 = HashSet<Int64>()\r\n  |                ^ \r\n  | \r\n\r\nerror: undeclared identifier 'HashSet'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpl6np1wha.cj:12:21:\r\n   | \r\n12 |     var commonSet = HashSet<Int64>()\r\n   |                     ^ \r\n   | \r\n\r\nerror: undeclared identifier 'ArrayList'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpl6np1wha.cj:18:18:\r\n   | \r\n18 |     var result = ArrayList<Int64>()\r\n   |                  ^ \r\n   | \r\n\r\nerror: undeclared identifier 'sort'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpl6np1wha.cj:22:5:\r\n   | \r\n22 |     sort(result)\r\n   |     ^ \r\n   | \r\n\r\n4 errors generated, 4 errors printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 19.96,
+        "api_cost": null,
+        "input_tokens": 4492.0,
+        "output_tokens": 1112.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/59",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 27.12,
+        "api_cost": null,
+        "input_tokens": 3355.0,
+        "output_tokens": 1522.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/6",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: undeclared identifier 'ArrayList'\r\n ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmprgexifxe.cj:9:18:\r\n  | \r\n9 |     var result = ArrayList<Int64>()\r\n  |                  ^ \r\n  | \r\n\r\n1 error generated, 1 error printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 18.2,
+        "api_cost": null,
+        "input_tokens": 4281.0,
+        "output_tokens": 978.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/60",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 4.84,
+        "api_cost": null,
+        "input_tokens": 3388.0,
+        "output_tokens": 178.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/61",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 20.89,
+        "api_cost": null,
+        "input_tokens": 4934.0,
+        "output_tokens": 943.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/62",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 5.06,
+        "api_cost": null,
+        "input_tokens": 4481.0,
+        "output_tokens": 213.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/63",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 8.72,
+        "api_cost": null,
+        "input_tokens": 3441.0,
+        "output_tokens": 490.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/64",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 11.95,
+        "api_cost": null,
+        "input_tokens": 4847.0,
+        "output_tokens": 576.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/65",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 80.88,
+        "api_cost": null,
+        "input_tokens": 4375.0,
+        "output_tokens": 4243.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/66",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 14.58,
+        "api_cost": null,
+        "input_tokens": 4134.0,
+        "output_tokens": 595.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/67",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 5.98,
+        "api_cost": null,
+        "input_tokens": 4041.0,
+        "output_tokens": 230.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/68",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 32.43,
+        "api_cost": null,
+        "input_tokens": 4729.0,
+        "output_tokens": 1570.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/69",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: undeclared identifier 'HashMap'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpwrm85qc_.cj:13:17:\r\n   | \r\n13 |     var freqs = HashMap<Int64, Int64>()\r\n   |                 ^ \r\n   | \r\n\r\n1 error generated, 1 error printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 4.85,
+        "api_cost": null,
+        "input_tokens": 4881.0,
+        "output_tokens": 208.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/7",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 14.83,
+        "api_cost": null,
+        "input_tokens": 4261.0,
+        "output_tokens": 650.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/70",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 35.77,
+        "api_cost": null,
+        "input_tokens": 4502.0,
+        "output_tokens": 2108.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/71",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: undeclared identifier 'sqrt'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpq_sg_6f0.cj:17:16:\r\n   | \r\n17 |     let area = sqrt(s * (s - Float64(a)) * (s - Float64(b)) * (s - Float64(c)))\r\n   |                ^ \r\n   | \r\n\r\nerror: undeclared identifier 'round'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpq_sg_6f0.cj:18:12:\r\n   | \r\n18 |     return round(area * 100.0) / 100.0\r\n   |            ^ \r\n   | \r\n\r\n2 errors generated, 2 errors printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 14.78,
+        "api_cost": null,
+        "input_tokens": 5061.0,
+        "output_tokens": 722.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/72",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 3.82,
+        "api_cost": null,
+        "input_tokens": 4950.0,
+        "output_tokens": 146.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/73",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 5.75,
+        "api_cost": null,
+        "input_tokens": 4727.0,
+        "output_tokens": 216.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/74",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 18.32,
+        "api_cost": null,
+        "input_tokens": 4277.0,
+        "output_tokens": 1019.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/75",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 24.77,
+        "api_cost": null,
+        "input_tokens": 3371.0,
+        "output_tokens": 1427.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/76",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: mismatched types\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpzrlet9s9.cj:14:11:\r\n   | \r\n14 |     return\r\n   |           ^ expected 'Bool', found 'Unit'\r\n   | \r\n\r\n1 error generated, 1 error printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 0.0,
+        "api_cost": null,
+        "input_tokens": 0.0,
+        "output_tokens": 0.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/77",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 43.82,
+        "api_cost": null,
+        "input_tokens": 4083.0,
+        "output_tokens": 2221.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/78",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 4.95,
+        "api_cost": null,
+        "input_tokens": 4634.0,
+        "output_tokens": 180.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/79",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: undeclared identifier 'ArrayList'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpwz2k5zja.cj:15:16:\r\n   | \r\n15 |     var bits = ArrayList<String>()\r\n   |                ^ \r\n   | \r\n\r\n1 error generated, 1 error printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 7.15,
+        "api_cost": null,
+        "input_tokens": 4973.0,
+        "output_tokens": 248.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/8",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 3.16,
+        "api_cost": null,
+        "input_tokens": 4472.0,
+        "output_tokens": 95.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/80",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 9.65,
+        "api_cost": null,
+        "input_tokens": 4953.0,
+        "output_tokens": 474.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/81",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 33.32,
+        "api_cost": null,
+        "input_tokens": 4314.0,
+        "output_tokens": 1998.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/82",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 10.26,
+        "api_cost": null,
+        "input_tokens": 4913.0,
+        "output_tokens": 504.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/83",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 18.59,
+        "api_cost": null,
+        "input_tokens": 3309.0,
+        "output_tokens": 1077.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/84",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 8.85,
+        "api_cost": null,
+        "input_tokens": 4964.0,
+        "output_tokens": 190.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/85",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 4.06,
+        "api_cost": null,
+        "input_tokens": 4767.0,
+        "output_tokens": 137.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/86",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 76.54,
+        "api_cost": null,
+        "input_tokens": 2884.0,
+        "output_tokens": 2653.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/87",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: undeclared identifier 'ArrayList'\r\n ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpfc8x8gpz.cj:3:18:\r\n  | \r\n3 |     var result = ArrayList<Array<Int64>>()\r\n  |                  ^ \r\n  | \r\n\r\n1 error generated, 1 error printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 26.65,
+        "api_cost": null,
+        "input_tokens": 4736.0,
+        "output_tokens": 1402.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/88",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 0,
+          "total": 1,
+          "test_pass_ratio": 0.0,
+          "correct": false,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 22.42,
+        "api_cost": null,
+        "input_tokens": 4729.0,
+        "output_tokens": 1136.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/89",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 12.56,
+        "api_cost": null,
+        "input_tokens": 5186.0,
+        "output_tokens": 627.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/9",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 8.55,
+        "api_cost": null,
+        "input_tokens": 4801.0,
+        "output_tokens": 273.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/90",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 16.8,
+        "api_cost": null,
+        "input_tokens": 4255.0,
+        "output_tokens": 866.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/91",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 65.69,
+        "api_cost": null,
+        "input_tokens": 4037.0,
+        "output_tokens": 3543.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/92",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 4.71,
+        "api_cost": null,
+        "input_tokens": 4477.0,
+        "output_tokens": 206.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/93",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: mismatched types\r\n ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpqw9sbvmm.cj:7:11:\r\n  | \r\n7 |     return\r\n  |           ^ expected 'Struct-String', found 'Unit'\r\n  | \r\n\r\n1 error generated, 1 error printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 0.0,
+        "api_cost": null,
+        "input_tokens": 0.0,
+        "output_tokens": 0.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/94",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 49.04,
+        "api_cost": null,
+        "input_tokens": 4664.0,
+        "output_tokens": 630.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/95",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: expected ';' or '<NL>', found literal '.0'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpck_wk6g_.cj:37:26:\r\n   | \r\n37 |         let key = dict[i].0\r\n   |                          ^^ expected ';' or '<NL>' here\r\n   | \r\n\r\n1 error generated, 1 error printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 83.86,
+        "api_cost": null,
+        "input_tokens": 4353.0,
+        "output_tokens": 4966.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/96",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: undeclared identifier 'ArrayList'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpm4wfuhzj.cj:15:18:\r\n   | \r\n15 |     var primes = ArrayList<Int64>()\r\n   |                  ^ \r\n   | \r\n\r\n1 error generated, 1 error printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 28.41,
+        "api_cost": null,
+        "input_tokens": 4519.0,
+        "output_tokens": 1424.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/97",
+      "n": 1,
+      "compile_success_count": 1,
+      "compile_results": [
+        {
+          "compile_success": true,
+          "compile_error": null,
+          "sample_index": 0
+        }
+      ],
+      "test_results": [
+        {
+          "passed": 1,
+          "total": 1,
+          "test_pass_ratio": 1.0,
+          "correct": true,
+          "error": null,
+          "execution_time_sec": null,
+          "max_memory_mb": null,
+          "total_memory_mb_sec": null,
+          "sample_index": 0
+        }
+      ],
+      "resource_consumption": {
+        "time_spent_sec": 18.75,
+        "api_cost": null,
+        "input_tokens": 4792.0,
+        "output_tokens": 883.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/98",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: undeclared identifier 'isUpperCase'\r\n ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpmiyg3rk_.cj:5:15:\r\n  | \r\n5 |         if (r.isUpperCase()) {\r\n  |               ^^^^^^^^^^^ \r\n  | \r\n\r\n1 error generated, 1 error printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 15.69,
+        "api_cost": null,
+        "input_tokens": 4036.0,
+        "output_tokens": 607.0
+      },
+      "canonical_perf": null
+    },
+    {
+      "task_id": "HumanEval/99",
+      "n": 1,
+      "compile_success_count": 0,
+      "compile_results": [
+        {
+          "compile_success": false,
+          "compile_error": "error: undeclared identifier 'parse'\r\n  ==> C:\\Users\\ZENSYN~1\\AppData\\Local\\Temp\\tmpchzf5mcn.cj:18:21:\r\n   | \r\n18 |     var v = Float64.parse(value)\r\n   |                     ^^^^^ \r\n   | \r\n\r\n1 error generated, 1 error printed.",
+          "sample_index": 0
+        }
+      ],
+      "test_results": [],
+      "resource_consumption": {
+        "time_spent_sec": 5.81,
+        "api_cost": null,
+        "input_tokens": 4993.0,
+        "output_tokens": 242.0
+      },
+      "canonical_perf": null
+    }
+  ]
+}

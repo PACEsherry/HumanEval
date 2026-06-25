@@ -1,0 +1,12 @@
+{"id":"discover-option-pattern","input":"仓颉 Option 的 ?. 和 ?? 怎么用，match 需要穷举吗？","expected_skills":["cangjie-lang-features"],"forbidden_skills":[],"min_rank":3}
+{"id":"discover-generic-concurrency-cffi","input":"仓颉的泛型 where 约束、spawn 并发和 CFFI 怎么写？","expected_skills":["cangjie-lang-features"],"forbidden_skills":[],"min_rank":3}
+{"id":"discover-cjpm-package","input":"仓颉 package、public import、main 入口和 cjpm.toml workspace 怎么配置？","expected_skills":["cangjie-lang-features"],"forbidden_skills":["cangjie-stdx"],"min_rank":3}
+{"id":"avoid-std-api-misfire","input":"仓颉标准库 HashMap.get、ArrayList.sort 和 std.io readToEnd 怎么用？","expected_skills":["cangjie-std"],"forbidden_skills":["cangjie-lang-features"],"min_rank":3}
+{"id":"avoid-stdx-misfire","input":"仓颉 stdx HTTP 客户端怎么发 HTTPS 请求、管理 Cookie 并解析 JSON？","expected_skills":["cangjie-stdx"],"forbidden_skills":["cangjie-lang-features"],"min_rank":3}
+{"id":"discover-humaneval-lang-pitfalls","input":"仓颉 HumanEval 里 match 空 case、Rune 转整数、enum == 和 import 顺序怎么避免编译错误？","expected_skills":["cangjie-lang-features"],"forbidden_skills":["cangjie-stdx"],"min_rank":3}
+{"id":"discover-any-tuple-param-pitfalls","input":"仓颉算法题里 Any 返回类型不能直接 ==、Array 和 Tuple 比较失败、函数参数不能重赋值怎么办？","expected_skills":["cangjie-lang-features"],"forbidden_skills":["cangjie-stdx"],"min_rank":3}
+{"id":"discover-rune-value-match-bitwise","input":"仓颉算法题里 Rune('a')、Rune.value、Option.value、match 当变量名、case 分支用花括号、UInt32 按位取反怎么修？","expected_skills":["cangjie-lang-features"],"forbidden_skills":["cangjie-stdx"],"min_rank":3}
+{"id":"discover-cangjie-toolchain-command-guard","input":"加载仓颉环境后 cj 命令找不到，仓颉编译器到底是 cj 还是 cjc，项目构建该用什么？","expected_skills":["cangjie-lang-features"],"forbidden_skills":["cangjie-stdx"],"min_rank":3}
+{"id":"discover-size-not-length","input":"仓颉编译报 error: 'length' is not a member of struct 'Array<Float64>'，数组、字符串和集合长度到底用 length 还是 size？","expected_skills":["cangjie-lang-features","cangjie-std"],"forbidden_skills":["cangjie-stdx"],"min_rank":3}
+{"id":"discover-literal-float-pitfalls","input":"仓颉里 UInt32('a')、r == 'a'、Float64 和 0 比较都报类型错误，这些语言规则该查哪个 skill？","expected_skills":["cangjie-lang-features"],"forbidden_skills":["cangjie-stdx"],"min_rank":3}
+{"id":"discover-eval06-lang-regressions","input":"仓颉 HumanEval 一次生成仍出现 Repeat:、变量名 match、while 整数条件、UInt8==Rune 和 ~x 编译错误，该用哪个 skill 做语言层修复？","expected_skills":["cangjie-lang-features"],"forbidden_skills":["cangjie-stdx"],"min_rank":3}

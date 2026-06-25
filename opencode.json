@@ -1,0 +1,21 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "myprovider": {
+      "name": "csi.ai",
+      "npm": "@ai-sdk/openai-compatible",
+      "options": {
+        "apiKey": "sk-ENriBfblBuYZqZ1hAjJz5g",
+        "baseURL": "http://113.46.219.251:8080/v1"
+      },
+      "models": {
+        "GLM-5": {
+          "name": "GLM-5"
+        },
+        "GLM-5.1": {
+          "name": "GLM-5.1"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "error": "Benchmark 文件为空或不存在: 文件不存在: ../data/HumanEval_swift.jsonl",
+  "benchmark_path": "../data/HumanEval_swift.jsonl",
+  "timestamp": "2026-06-17T14:10:00+08:00",
+  "agent_name": "Claude Code"
+}

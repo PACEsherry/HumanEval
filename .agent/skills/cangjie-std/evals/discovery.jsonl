@@ -1,0 +1,12 @@
+{"id":"discover-process-regex","input":"仓颉标准库怎么启动子进程并读取输出，还要做正则替换？","expected_skills":["cangjie-std"],"forbidden_skills":[],"min_rank":3}
+{"id":"discover-weakref-network-test","input":"仓颉里 WeakRef 怎么做缓存，TCP、UDP 和 @Test 单测怎么写？","expected_skills":["cangjie-std"],"forbidden_skills":[],"min_rank":3}
+{"id":"discover-collection-sync","input":"仓颉标准库 HashMap、ArrayList、ConcurrentHashMap、Mutex 和 Condition 怎么用？","expected_skills":["cangjie-std"],"forbidden_skills":["cangjie-stdx"],"min_rank":3}
+{"id":"avoid-lang-syntax-misfire","input":"仓颉 match 穷举、if-let、泛型 where 约束和 as 类型转换是什么语法规则？","expected_skills":["cangjie-lang-features"],"forbidden_skills":["cangjie-std"],"min_rank":3}
+{"id":"avoid-stdx-http-misfire","input":"仓颉 stdx 怎么发 HTTPS 请求、管理 Cookie、解析 JSON 并配置 TLS？","expected_skills":["cangjie-stdx"],"forbidden_skills":["cangjie-std"],"min_rank":3}
+{"id":"discover-humaneval-std-pitfalls","input":"仓颉 HumanEval 算法题里 ArrayList、HashMap、Rune.isNumber、Int64.parse、sort 和 String.toRuneArray 怎么用？","expected_skills":["cangjie-std"],"forbidden_skills":["cangjie-stdx"],"min_rank":3}
+{"id":"discover-stringbuilder-byte-pitfalls","input":"仓颉 StringBuilder.add 报错、for(b in s) 和 \"a\" 比较报错、Byte.toInt32 不存在怎么修？","expected_skills":["cangjie-std"],"forbidden_skills":["cangjie-stdx"],"min_rank":3}
+{"id":"discover-collection-string-api-pitfalls","input":"仓颉 HashMap.put、HashSet.put、ArrayList.removeAt/set、String.fromRuneArray、substring、String(Int64) 不存在怎么改？","expected_skills":["cangjie-std"],"forbidden_skills":["cangjie-stdx"],"min_rank":3}
+{"id":"discover-unittest-cjc-not-cj","input":"仓颉单元测试怎么跑，为什么 cj --test 找不到命令，应该用 cjc --test 还是 cjpm test？","expected_skills":["cangjie-std"],"forbidden_skills":["cangjie-stdx"],"min_rank":3}
+{"id":"discover-std-size-not-length","input":"仓颉 Array<Float64>.length、ArrayList.length、HashMap.length、String.length 都编译失败，标准库数量属性应该查哪个 skill？","expected_skills":["cangjie-std"],"forbidden_skills":["cangjie-stdx"],"min_rank":3}
+{"id":"discover-std-humaneval05-api-pitfalls","input":"仓颉 Array.append、arr.sort 返回值、Int64.parse(s) ?? 0、String(ArrayList<Rune>) 和 MD5 库用法这些 API 坑该查哪个 skill？","expected_skills":["cangjie-std"],"forbidden_skills":[],"min_rank":3}
+{"id":"discover-eval06-std-regressions","input":"仓颉 HumanEval 一次生成仍出现 Array.append、ArrayList.append、Array.sort、Repeat:、String.toLower、String.fromRune、String(Rune) 编译错误，该用哪个 skill 修？","expected_skills":["cangjie-std"],"forbidden_skills":["cangjie-stdx"],"min_rank":3}
